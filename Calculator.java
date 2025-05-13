@@ -1,6 +1,5 @@
 import java.util.*;
-
-public class Calculator {
+public class Calculator {    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -9,8 +8,9 @@ public class Calculator {
             System.out.println("Choose an operator: \n 1. Add \n 2. Subtract \n 3. Multiplication \n 4. Division");
             System.out.print("Enter an operator (1-4), or 0 to exit: ");
             operator = sc.nextInt();
-
-            if (operator == 0) {
+                                         /*actually what i changed in this code is if user enters invalid choice then exiting from the program.
+                                            so that user can easily understand the logic!!*/
+            if (operator == 0) {            
                 System.out.println("Exit the calculator.");  
                 break;
             }
